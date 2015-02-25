@@ -1,0 +1,27 @@
+﻿{
+    "webroot": "wwwroot",
+    "version": "1.0.0-*",
+    "exclude": [
+        "wwwroot"
+    ],
+    "packExclude": [
+        "**.kproj",
+        "**.user",
+        "**.vspscc"
+    ],
+    "dependencies": {
+        "Newtonsoft.Json": "6.0.8.0",
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta1",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta1",
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta1",
+        "Kestrel": "1.0.0-beta1"
+    },
+    "commands": {
+        "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:55555",
+        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:55555"
+    },
+    "frameworks": {
+        "aspnet50": { },
+        "aspnetcore50": { }
+    }
+}
